@@ -1,0 +1,42 @@
+body{
+    background-image: url('https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&h=350');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: lightblue;
+}
+.wrapper{
+    /* display: inline-block; */
+    width: 1000px;
+}
+form{
+    position: absolute;
+    margin-left: 40%;
+    
+   
+}
+.forum{
+    font-size: 30px;
+}
+
+.btn{
+    
+}
+
+label{
+    color: white;
+}
+
+img{
+    border: 5px solid rgb(197, 176, 107);
+    margin: 15px;
+    display: flex;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+
+}
+h4{
+    margin-top: 200px;
+}
