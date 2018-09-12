@@ -18,8 +18,11 @@ form{
     font-size: 30px;
 }
 
-.btn{
-    
+.submit{
+    color: darkred;
+    background-color: tan;
+    border: 4px solid brown;
+
 }
 
 label{
@@ -34,9 +37,20 @@ img{
 section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
 
 }
 h4{
-    margin-top: 200px;
+    margin-top: 150px;
+}
+.btn{
+    position: relative;
+    left: 25%;
+}
+.search{
+    width: 225px;
+}
+a{
+    color: rgb(186, 62, 62);
 }

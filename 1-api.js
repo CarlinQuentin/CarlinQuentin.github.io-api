@@ -14,18 +14,18 @@ const previousBtn = document.querySelector('.prev');
 
 
 // nav.style.display = 'none';
-let pageNumber = 0;
+// let pageNumber = 0;
 let displayNav = false;
 
 searchForm.addEventListener('submit', fetchResults);
-nextBtn.addEventListener('click', nextPage);
-previousBtn.addEventListener('click', previousPage);
+// nextBtn.addEventListener('click', nextPage);
+// previousBtn.addEventListener('click', previousPage);
 
 
 
 function fetchResults(e){
     e.preventDefault()
-    url = `${baseURL}?q=${searchTerm.value}&app_id=${id}&app_key=${key}`
+    url = `${baseURL}?q=${searchTerm.value}&app_id=${id}&app_key=${key}&to=8`
     console.log(url)
 
 
@@ -44,6 +44,7 @@ function displayResults(json) {
 
     if (recipe.length === 0) {
         console.log('No Results')
+        alert ("No Results");
     } else {
         for (let i = 0; i < recipe.length; i++){
 
@@ -76,15 +77,7 @@ function displayResults(json) {
     }
 }
 };
-function nextPage(e){
-    pageNumber++
-    fetchResults(e)
-    console.log('Page number', pageNumber)
-};
 
-function previousPage(e){
-    fetchResults(e)
-};
 
 
     
